@@ -24,7 +24,7 @@ jobs:
     - name: Restore dependencies project
       run: dotnet restore IntegrationTestingToDoAPI
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore IntegrationTestingToDoAPI
     - name: Restore dependencies test project
       run: dotnet restore IntegrationTestingToDoAPITest
     - name: Test
