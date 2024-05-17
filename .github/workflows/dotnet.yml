@@ -24,6 +24,9 @@ jobs:
       run: dir
     - name: Step to correct project folder
       run: cd ./IntegrationTestingToDoAPI
+      
+    - name: Get current drectory
+      run: dir
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
