@@ -22,7 +22,11 @@ jobs:
         dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore
+    - name: Step to correct project folder
+      run: cd IntegrationTestingToDoAPI
     - name: Build
       run: dotnet build --no-restore
+    - name: Step to correct test folder
+      run: cd ..\IntegrationTestingToDoAPITest
     - name: Test
       run: dotnet test --no-build --verbosity normal
