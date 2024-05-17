@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Step to correct project folder
-      run: cd .\IntegrationTestingToDoAPI
+      run: cd ./IntegrationTestingToDoAPI
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
