@@ -20,15 +20,9 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
-    - name: Get current drectory
-      run: dir
-    - name: Step to correct project folder
-      run: cd IntegrationTestingToDoAPI
-      
-    - name: Get current drectory
-      run: dir
-    - name: Restore dependencies
-      run: dotnet restore
+
+    - name: Restore dependencies project
+      run: dotnet restore IntegrationTestingToDoAPI
     - name: Build
       run: dotnet build --no-restore
     - name: Step to correct test folder
