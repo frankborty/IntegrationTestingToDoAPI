@@ -23,7 +23,7 @@ jobs:
     - name: Get current drectory
       run: dir
     - name: Step to correct project folder
-      run: cd ./IntegrationTestingToDoAPI
+      run: cd IntegrationTestingToDoAPI
       
     - name: Get current drectory
       run: dir
