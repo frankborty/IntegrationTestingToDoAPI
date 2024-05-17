@@ -25,7 +25,7 @@ jobs:
       run: dotnet restore IntegrationTestingToDoAPI
     - name: Build
       run: dotnet build --no-restore
-    - name: Step to correct test folder
-      run: cd ..\IntegrationTestingToDoAPITest
+    - name: Restore dependencies test project
+      run: dotnet restore IntegrationTestingToDoAPITest
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal IntegrationTestingToDoAPITest
